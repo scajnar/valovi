@@ -3,10 +3,11 @@
   width:100%;
   height: 100%;
   grid-template-columns: 3fr 2fr 2fr 2fr 2fr 2fr 3fr;
-  grid-template-rows: 2fr 3fr 3fr 2fr;
+  grid-template-rows: 2fr 3fr 3fr 3fr 2fr;
   grid-template-areas:
       "lbuff ena  dva  tri  stiri  pet  rbuff"
       "lbuff enae dvae trie stirie pete rbuff"
+      "lbuff enaP dvaP triP stiriP petP rbuff"
       "lbuff enad dvad trid stirid petd rbuff"
       "lbuff enat dvat trit stirit pett rbuff";
 
@@ -16,10 +17,12 @@ animation: gap 1s ease-in-out infinite alternate;
 }
 @keyframes gap{
     from{
-        grid-template-rows: 2fr 3fr 3fr 2fr;
+        grid-template-rows: 1fr 3fr 6fr 3fr 1fr;
+        grid-gap: 5px;
     }
     to{
-        grid-template-rows: 1fr 2fr 2fr 1fr;
+        grid-template-rows: 5fr 2fr 6fr 2fr 5fr;
+        grid-gap: 10px;
     }
 }
 .veliki{
@@ -51,12 +54,8 @@ animation: gap 1s ease-in-out infinite alternate;
  .krogDvaKvadDva{ grid-area: dvad}
  .krogDvaKvadTri{ grid-area: dvat}
 
-.krogTri{ grid-area: tri}
- .krogTriKvadEna{ grid-area: trie;
-     background-image: url('low-poly-planet-earth-Oxnnen0-600.png');
-     background-position: center;
-     height: 500px;
-     width: 400px;}
+.krogTri{ grid-area: tri;}
+ .krogTriKvadEna{ grid-area: trie;}
  .krogTriKvadDva{ grid-area: trid;}
  .krogTriKvadTri{ grid-area: trit}
 
@@ -69,6 +68,16 @@ animation: gap 1s ease-in-out infinite alternate;
  .krogPetKvadEna{ grid-area: pete}
  .krogPetKvadDva{ grid-area: petd;}
  .krogPetKvadTri{ grid-area: pett}
+
+ .krogEnaEnaPaPol{ grid-area: enaP}
+.krogDvaEnaPaPol{ grid-area: dvaP}
+.krogTriEnaPaPol{ grid-area: triP;
+    background-image: url('low-poly-planet-earth-Oxnnen0-600.png');
+    background-position: center;
+    height: 500px;
+    width: 400px;}
+.krogStiriEnaPaPol{ grid-area: stiriP}
+.krogPetEnaPaPol{ grid-area: petP}
 
 .leftBuffer{grid-area: lbuff}
 .rightBuffer{grid-area: rbuff}
