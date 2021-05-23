@@ -1,0 +1,59 @@
+.page-2 {
+  display: grid;
+  width:100%;
+  height: 100%;
+  grid-template-columns: 3fr 2fr 2fr 2fr 2fr 2fr 3fr;
+  grid-template-rows: 2fr 3fr 3fr 2fr;
+  grid-template-areas:
+      "lbuff ena  dva  tri  stiri  pet  rbuff"
+      "lbuff enae dvae trie stirie pete rbuff"
+      "lbuff enad dvad trid stirid petd rbuff"
+      "lbuff enat dvat trit stirit pett rbuff";
+
+  grid-gap: 5px;
+  background-image: linear-gradient(to bottom, #95acb2, #8aa6af, #80a0ad, #769aab, #6d94a9, #628ca1, #58859a, #4d7d92, #3e7183, #306673, #235a64, #164f55);
+
+}
+
+.veliki{
+  background: #994499;
+}
+
+.mali{
+  background: green;
+  opacity: 0.8;
+  transition:0.2s;
+}
+
+.mali:hover {
+ opacity: 1;
+ transform: scale(1.02);
+}
+
+.krogEna{ grid-area: ena}
+ .krogEnaKvadEna{ grid-area: enae}
+ .krogEnaKvadDva{ grid-area: enad}
+ .krogEnaKvadTri{ grid-area: enat}
+
+.krogDva{ grid-area: dva}
+ .krogDvaKvadEna{ grid-area: dvae}
+ .krogDvaKvadDva{ grid-area: dvad}
+ .krogDvaKvadTri{ grid-area: dvat}
+
+.krogTri{ grid-area: tri}
+ .krogTriKvadEna{ grid-area: trie}
+ .krogTriKvadDva{ grid-area: trid}
+ .krogTriKvadTri{ grid-area: trit}
+
+.krogStiri{ grid-area: stiri}
+ .krogStiriKvadEna{ grid-area: stirie}
+ .krogStiriKvadDva{ grid-area: stirid}
+ .krogStiriKvadTri{ grid-area: stirit}
+
+.krogPet{ grid-area: pet}
+ .krogPetKvadEna{ grid-area: pete}
+ .krogPetKvadDva{ grid-area: petd}
+ .krogPetKvadTri{ grid-area: pett}
+
+.leftBuffer{grid-area: lbuff}
+.rightBuffer{grid-area: rbuff}
