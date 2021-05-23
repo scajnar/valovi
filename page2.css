@@ -33,6 +33,7 @@ animation: gap 1s ease-in-out infinite alternate;
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor:pointer;
 }
 
 .mali:hover {
@@ -51,8 +52,12 @@ animation: gap 1s ease-in-out infinite alternate;
  .krogDvaKvadTri{ grid-area: dvat}
 
 .krogTri{ grid-area: tri}
- .krogTriKvadEna{ grid-area: trie}
- .krogTriKvadDva{ grid-area: trid}
+ .krogTriKvadEna{ grid-area: trie;
+     background-image: url('low-poly-planet-earth-Oxnnen0-600.png');
+     background-position: center;
+     height: 500px;
+     width: 400px;}
+ .krogTriKvadDva{ grid-area: trid;}
  .krogTriKvadTri{ grid-area: trit}
 
 .krogStiri{ grid-area: stiri}
@@ -62,8 +67,19 @@ animation: gap 1s ease-in-out infinite alternate;
 
 .krogPet{ grid-area: pet}
  .krogPetKvadEna{ grid-area: pete}
- .krogPetKvadDva{ grid-area: petd}
+ .krogPetKvadDva{ grid-area: petd;}
  .krogPetKvadTri{ grid-area: pett}
 
 .leftBuffer{grid-area: lbuff}
 .rightBuffer{grid-area: rbuff}
+
+#eo5vAyEuZUG1{
+    height: 100%;
+    width: 100%;
+}
+
+p{
+    font-family: Arial;
+    font-size: 18px;
+    color: white;
+}
