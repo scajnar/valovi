@@ -4,7 +4,7 @@
   background: linear-gradient(27deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
 }
 
-.ladja{
+.page-1 .ladja{
   position: absolute;
   left: 160px;
   bottom: 200px;
@@ -12,7 +12,27 @@
   width: 500px;
 }
 
-.waves {
+.page-1 .quote-container {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  right: 250px;
+  top: 190px;
+}
+
+.page-1 .quote-container .quote {
+  font-size: 38px;
+  color: #fff;
+}
+
+.page-1 .quote-container .author {
+  font-size: 28px;
+  color: #fff;
+  width: 100%;
+  text-align: right;
+}
+
+.page-1 .waves {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -21,27 +41,27 @@
 }
 
 /* Animation */
-.wave-paths use {
+.page-1 .wave-paths use {
   animation: move-waves 10s ease-in-out infinite;
   fill: url(#wave-gradient);
 }
-.wave-paths use:nth-child(odd) {
+.page-1 .wave-paths use:nth-child(odd) {
   animation-direction: reverse;
   animation-duration: 13s;
 }
-.wave-paths use:nth-child(1) {
+.page-1 .wave-paths use:nth-child(1) {
   animation-delay: -2s;
   opacity: 0.7;
 }
-.wave-paths use:nth-child(2) {
+.page-1 .wave-paths use:nth-child(2) {
   animation-delay: -3s;
   opacity: 0.5;
 }
-.wave-paths use:nth-child(3) {
+.page-1 .wave-paths use:nth-child(3) {
   animation-delay: -4s;
   opacity: 0.3;
 }
-.wave-paths use:nth-child(4) {
+.page-1 .wave-paths use:nth-child(4) {
   animation-delay: -5s;
 }
 
