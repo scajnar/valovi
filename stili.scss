@@ -1,0 +1,22 @@
+body,html{
+  margin:0; padding: 5em;
+  box-sizing: border-box;
+  width:100%;
+  height: 100%;
+  background:#994499;
+}
+
+#morph{
+  width:100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  pointer-events: none
+  z-index:1;
+}
+
+.pointer{
+  pointer-events: auto !important;
+}
+
