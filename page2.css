@@ -12,17 +12,27 @@
 
   grid-gap: 5px;
   background-image: linear-gradient(to bottom, #95acb2, #8aa6af, #80a0ad, #769aab, #6d94a9, #628ca1, #58859a, #4d7d92, #3e7183, #306673, #235a64, #164f55);
-
+animation: gap 1s ease-in-out infinite alternate;
 }
-
+@keyframes gap{
+    from{
+        grid-template-rows: 2fr 3fr 3fr 2fr;
+    }
+    to{
+        grid-template-rows: 1fr 2fr 2fr 1fr;
+    }
+}
 .veliki{
   background: #994499;
 }
 
 .mali{
-  background: green;
   opacity: 0.8;
   transition:0.2s;
+    align-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .mali:hover {
