@@ -1,0 +1,22 @@
+.keader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  height: 100%;
+}
+
+.keader .link {
+  font-size: 16px;
+  margin: 0 20px;
+  color: black;
+  padding: 12px;
+  transition: background 0.2s;
+  cursor: pointer;
+}
+
+.keader .link:hover {
+  background: #00000015;
+  text-decoration: none;
+  border-radius: 5px;
+}
